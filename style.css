@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    /* Colors */
+    --primary-color: #3a86ff;
+    --secondary-color: #0F172A;
+    --white: #FFF;
+    --black: #000;
+    --gray: #A0ADBF;
+    /* Fonts */
+    --primary-font: 'Poppins', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: var(--primary-font);
+}
+
+.header-container {
+    background-color: var(--primary-color);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+    color: var(--white);
+}
+
+.header-container h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.header-container img {
+    width: 32px;
+}
+
+.main-container {
+    margin-bottom: 5rem;
+}
+
+.cart {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cart-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--white);
+    position: absolute;
+    color: var(--black);
+    font-weight: 600;
+    font-size: .9rem;
+    right: -10px;
+    top: -10px;
+}
+
+.products ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.products ul li {
+    width: 300px;
+    height: 400px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.product__one {
+    background-color: var(--white);
+}
+
+.product__two {
+    background-color: var(--secondary-color);
+}
+
+.product-image {
+    max-width: 200px;
+    max-height: 125px;
+    margin-bottom: 1rem;
+}
+
+.product-type {
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.product__two .product-name {
+    color: var(--white);
+}
+
+.product-name {
+    font-weight: 600;
+    margin: 2rem 0;
+}
+
+.product-price {
+    color: var(--gray);
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.btn-add-to-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    width: 200px;
+    height: 30px;
+    cursor: pointer;
+    font-family: var(--primary-font);
+    font-weight: 600;
+    transition: .3s;
+}
+
+.product__one .btn-add-to-cart {
+    background-color: var(--secondary-color);
+    color: var(--white);
+}
+
+.btn-add-to-cart:hover {
+    transform: scale(105%);
+}
