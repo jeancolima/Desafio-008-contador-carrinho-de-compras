@@ -15,6 +15,7 @@ body {
     box-sizing: border-box;
     overflow-x: hidden;
     font-family: var(--primary-font);
+    background-color: var(--white);
 }
 
 .header-container {
